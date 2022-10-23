@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+p,
+h2,
+body {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #e5e5e5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1350px;
+  padding: 10px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  /*flex-wrap: wrap: Залишила на майбутнє*/
+  margin: 10px 0;
+}
+
+img {
+  height: 380px;
+}
+
+.ad_card > img {
+  height: 100%;
+}
+
+.recipe_card {
+  display: flex;
+  flex: 0 1 calc(25.25% - 1em);
+  flex-direction: column;
+  background-color: white;
+  transition: all 200ms ease-in-out;
+  border-radius: 4px;
+}
+
+.recipe_card:hover {
+  box-shadow: 2px 2px 14px rgba(101, 101, 101, 0.6);
+}
+
+.recipe_card_wide {
+  flex: 0 1 calc(50.5% - 1em);
+}
+
+.recipe_info {
+  height: 200px;
+  padding: 40px;
+}
+
+h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  color: #33bbff;
+  height: 45px;
+}
+
+p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 240px;
+  padding: 3px 0;
+
+  color: #777d88;
+}
+
+span {
+  color: #393e46;
+  font-weight: 600;
+}
